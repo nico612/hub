@@ -47,6 +47,8 @@ target 'Swifthub' do
   pod 'SVProgressHUD', '~> 2.0'  # https://github.com/SVProgressHUD/SVProgressHUD
   pod 'ImageSlideshow/Kingfisher', :git => 'https://github.com/khoren93/ImageSlideshow.git', :branch => 'master'   # https://github.com/zvonicek/ImageSlideshow
   
+  # 下拉菜单
+  pod 'DropDown', '~> 2.0'  # https://github.com/AssistoLab/DropDown
 
   pod 'Toast-Swift', '~> 5.0.1' # https://github.com/scalessec/Toast-Swift
   
@@ -81,6 +83,8 @@ target 'Swifthub' do
   
   # 一系列扩展和工具
   pod 'SwifterSwift' # https://github.com/SwifterSwift/SwifterSwift
+  
+  # iOS 调试工具
   pod 'FLEX', '~> 5.0', :configurations => ['Debug']  # https://github.com/Flipboard/FLEX
   pod 'BonMot', '~> 6.0'  # https://github.com/Rightpoint/BonMot
 

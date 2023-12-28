@@ -15,6 +15,9 @@
 		841563CE2B3DCA45004CB5F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841563D02B3DCA45004CB5F6 /* Localizable.strings */; };
 		841563D62B3DCB57004CB5F6 /* LibsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841563D52B3DCB57004CB5F6 /* LibsManager.swift */; };
 		841563D92B3DCE9C004CB5F6 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841563D82B3DCE9C004CB5F6 /* LogManager.swift */; };
+		841563DC2B3DDA82004CB5F6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841563DB2B3DDA82004CB5F6 /* Reachability.swift */; };
+		841563E02B3DDD01004CB5F6 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841563DF2B3DDD01004CB5F6 /* Int.swift */; };
+		841563E22B3DDD36004CB5F6 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841563E12B3DDD36004CB5F6 /* String.swift */; };
 		849313752B3D652C00DD0036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313742B3D652C00DD0036 /* AppDelegate.swift */; };
 		849313792B3D652C00DD0036 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313782B3D652C00DD0036 /* HomeTabBarController.swift */; };
 		8493137C2B3D652D00DD0036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8493137A2B3D652D00DD0036 /* Main.storyboard */; };
@@ -61,6 +64,9 @@
 		841563D32B3DCA8F004CB5F6 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		841563D52B3DCB57004CB5F6 /* LibsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibsManager.swift; sourceTree = "<group>"; };
 		841563D82B3DCE9C004CB5F6 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		841563DB2B3DDA82004CB5F6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		841563DF2B3DDD01004CB5F6 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		841563E12B3DDD36004CB5F6 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		849313712B3D652C00DD0036 /* Swifthub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifthub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849313742B3D652C00DD0036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849313782B3D652C00DD0036 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
@@ -145,6 +151,23 @@
 				841563D82B3DCE9C004CB5F6 /* LogManager.swift */,
 			);
 			path = LogManager;
+			sourceTree = "<group>";
+		};
+		841563DA2B3DDA59004CB5F6 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				841563DB2B3DDA82004CB5F6 /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		841563DD2B3DDCCC004CB5F6 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				841563DF2B3DDD01004CB5F6 /* Int.swift */,
+				841563E12B3DDD36004CB5F6 /* String.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		849313682B3D652C00DD0036 = {
@@ -233,6 +256,7 @@
 		849313A72B3D656F00DD0036 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				841563DD2B3DDCCC004CB5F6 /* Foundation */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -240,6 +264,7 @@
 		849313A82B3D657400DD0036 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				841563DA2B3DDA59004CB5F6 /* Reachability */,
 				841563D42B3DCB46004CB5F6 /* LibsManager */,
 				841563D72B3DCD90004CB5F6 /* LogManager */,
 				841563922B3DA1DF004CB5F6 /* ThemeManager */,
@@ -507,6 +532,9 @@
 			files = (
 				841563962B3DB900004CB5F6 /* Application.swift in Sources */,
 				841563D92B3DCE9C004CB5F6 /* LogManager.swift in Sources */,
+				841563DC2B3DDA82004CB5F6 /* Reachability.swift in Sources */,
+				841563E02B3DDD01004CB5F6 /* Int.swift in Sources */,
+				841563E22B3DDD36004CB5F6 /* String.swift in Sources */,
 				849313792B3D652C00DD0036 /* HomeTabBarController.swift in Sources */,
 				841563972B3DBA28004CB5F6 /* Navigator.swift in Sources */,
 				849313752B3D652C00DD0036 /* AppDelegate.swift in Sources */,

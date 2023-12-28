@@ -10,6 +10,7 @@ import RxSwift
 import RxCocoa
 import RxTheme
 import SwifterSwift
+import KafkaRefresh
 
 /// 全局默认statusbar样式
 let globalStatusBarStyle = BehaviorRelay<UIStatusBarStyle>(value: .default)
@@ -190,13 +191,13 @@ extension Reactive where Base: UIApplication {
     }
 }
 
-//extension Reactive where Base: KafkaRefreshDefaults {
-//    var themeColor: Binder<UIColor?> {
-//        return Binder(self.base) { view, attr in
-//            view.themeColor = attr
-//        }
-//    }
-//}
+extension Reactive where Base: KafkaRefreshDefaults {
+    var themeColor: Binder<UIColor?> {
+        return Binder(self.base) { view, attr in
+            view.themeColor = attr
+        }
+    }
+}
 
 public extension Reactive where Base: UISwitch {
     var onTintColor: Binder<UIColor?> {
@@ -338,18 +339,18 @@ extension ThemeProxy where Base: UITextField {
 //    }
 //}
 //
-//extension ThemeProxy where Base: KafkaRefreshDefaults {
-//    var themeColor: ThemeAttribute<UIColor?> {
-//        get { fatalError("set only") }
-//        set {
-//            let disposable = newValue.stream
-//                .take(until: base.rx.deallocating)
-//                .observe(on: MainScheduler.instance)
-//                .bind(to: base.rx.themeColor)
-//            hold(disposable, for: "themeColor")
-//        }
-//    }
-//}
-//
-//
-//
+
+extension ThemeProxy where Base: KafkaRefreshDefaults {
+    var themeColor: ThemeAttribute<UIColor?> {
+        get { fatalError("set only") }
+        set {
+            let disposable = newValue.stream
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
+                .bind(to: base.rx.themeColor)
+            hold(disposable, for: "themeColor")
+        }
+    }
+}
+
+
