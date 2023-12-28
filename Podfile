@@ -6,6 +6,15 @@ use_frameworks!
 
 target 'Swifthub' do
   # Pods for Swifthub
+  
+  # Networking
+  pod 'Moya/RxSwift', '~> 15.0'  # https://github.com/Moya/Moya
+
+  # Rx Extensions
+  # RxDataSources 提供数据源的扩展，会安装 RxCocoa 和 RxRelay
+  pod 'RxDataSources', '~> 5.0'  # https://github.com/RxSwiftCommunity/RxDataSources
+  pod 'RxTheme', '~> 6.0'  # https://github.com/RxSwiftCommunity/RxTheme
+
 	
   #Tools
   
@@ -38,5 +47,10 @@ target 'Swifthub' do
   
   # Auto Layout
   pod 'SnapKit', '~> 5.6.0' # https://github.com/SnapKit/SnapKit
+  
+  # Code Quality
+  
+  # 一系列扩展和工具
+  pod 'SwifterSwift' # https://github.com/SwifterSwift/SwifterSwift
 
 end

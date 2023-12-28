@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8415638F2B3D92A2004CB5F6 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415638E2B3D92A2004CB5F6 /* BaseNavigationController.swift */; };
+		841563912B3D92D2004CB5F6 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841563902B3D92D2004CB5F6 /* ThemeManager.swift */; };
+		841563942B3DA1EE004CB5F6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841563932B3DA1EE004CB5F6 /* Theme.swift */; };
+		841563962B3DB900004CB5F6 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841563952B3DB900004CB5F6 /* Application.swift */; };
+		841563972B3DBA28004CB5F6 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415638B2B3D845D004CB5F6 /* Navigator.swift */; };
 		849313752B3D652C00DD0036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313742B3D652C00DD0036 /* AppDelegate.swift */; };
 		849313792B3D652C00DD0036 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313782B3D652C00DD0036 /* HomeTabBarController.swift */; };
 		8493137C2B3D652D00DD0036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8493137A2B3D652D00DD0036 /* Main.storyboard */; };
@@ -39,6 +44,13 @@
 
 /* Begin PBXFileReference section */
 		2D90E8A3AE63EF7DBFC61F3F /* Pods-Swifthub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifthub.debug.xcconfig"; path = "Target Support Files/Pods-Swifthub/Pods-Swifthub.debug.xcconfig"; sourceTree = "<group>"; };
+		841563892B3D8382004CB5F6 /* CHANGELOG */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CHANGELOG; sourceTree = "<group>"; };
+		8415638A2B3D83E0004CB5F6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		8415638B2B3D845D004CB5F6 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		8415638E2B3D92A2004CB5F6 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		841563902B3D92D2004CB5F6 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		841563932B3DA1EE004CB5F6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		841563952B3DB900004CB5F6 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		849313712B3D652C00DD0036 /* Swifthub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifthub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849313742B3D652C00DD0036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849313782B3D652C00DD0036 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
@@ -92,9 +104,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		841563922B3DA1DF004CB5F6 /* ThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				841563902B3D92D2004CB5F6 /* ThemeManager.swift */,
+				841563932B3DA1EE004CB5F6 /* Theme.swift */,
+			);
+			path = ThemeManager;
+			sourceTree = "<group>";
+		};
 		849313682B3D652C00DD0036 = {
 			isa = PBXGroup;
 			children = (
+				841563892B3D8382004CB5F6 /* CHANGELOG */,
 				849313732B3D652C00DD0036 /* Swifthub */,
 				8493138A2B3D652D00DD0036 /* SwifthubTests */,
 				849313942B3D652D00DD0036 /* SwifthubUITests */,
@@ -152,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				849313742B3D652C00DD0036 /* AppDelegate.swift */,
+				841563952B3DB900004CB5F6 /* Application.swift */,
+				8415638B2B3D845D004CB5F6 /* Navigator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -159,6 +183,7 @@
 		849313A52B3D656500DD0036 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8415638E2B3D92A2004CB5F6 /* BaseNavigationController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -180,6 +205,7 @@
 		849313A82B3D657400DD0036 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				841563922B3DA1DF004CB5F6 /* ThemeManager */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -211,6 +237,7 @@
 				849313B52B3D786A00DD0036 /* R.generated.swift */,
 				849313822B3D652D00DD0036 /* Info.plist */,
 				8493137D2B3D652D00DD0036 /* Assets.xcassets */,
+				8415638A2B3D83E0004CB5F6 /* README.md */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -436,10 +463,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841563962B3DB900004CB5F6 /* Application.swift in Sources */,
 				849313792B3D652C00DD0036 /* HomeTabBarController.swift in Sources */,
+				841563972B3DBA28004CB5F6 /* Navigator.swift in Sources */,
 				849313752B3D652C00DD0036 /* AppDelegate.swift in Sources */,
 				849313B32B3D6FB700DD0036 /* InitialSplitViewController.swift in Sources */,
+				8415638F2B3D92A2004CB5F6 /* BaseNavigationController.swift in Sources */,
 				849313B62B3D786A00DD0036 /* R.generated.swift in Sources */,
+				841563912B3D92D2004CB5F6 /* ThemeManager.swift in Sources */,
+				841563942B3DA1EE004CB5F6 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

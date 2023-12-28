@@ -1,4 +1,6 @@
 PODS:
+  - Alamofire (5.8.1)
+  - Differentiator (5.0.0)
   - Hero (1.6.2)
   - KafkaRefresh (1.7.0):
     - KafkaRefresh/Category (= 1.7.0)
@@ -36,6 +38,11 @@ PODS:
     - KafkaRefresh/Category
     - KafkaRefresh/Default
   - KeychainAccess (4.2.2)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
   - PromiseKit (8.1.1):
     - PromiseKit/CorePromise (= 8.1.1)
     - PromiseKit/Foundation (= 8.1.1)
@@ -47,7 +54,53 @@ PODS:
     - PromiseKit/CorePromise
   - R.swift (7.3.2)
   - RAMAnimatedTabBarController (5.2.0)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - RxTheme (6.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - SnapKit (5.6.0)
+  - SwifterSwift (6.0.0):
+    - SwifterSwift/AppKit (= 6.0.0)
+    - SwifterSwift/Combine (= 6.0.0)
+    - SwifterSwift/CoreAnimation (= 6.0.0)
+    - SwifterSwift/CoreGraphics (= 6.0.0)
+    - SwifterSwift/CoreLocation (= 6.0.0)
+    - SwifterSwift/CryptoKit (= 6.0.0)
+    - SwifterSwift/Dispatch (= 6.0.0)
+    - SwifterSwift/Foundation (= 6.0.0)
+    - SwifterSwift/HealthKit (= 6.0.0)
+    - SwifterSwift/MapKit (= 6.0.0)
+    - SwifterSwift/SceneKit (= 6.0.0)
+    - SwifterSwift/SpriteKit (= 6.0.0)
+    - SwifterSwift/StoreKit (= 6.0.0)
+    - SwifterSwift/SwiftStdlib (= 6.0.0)
+    - SwifterSwift/UIKit (= 6.0.0)
+    - SwifterSwift/WebKit (= 6.0.0)
+  - SwifterSwift/AppKit (6.0.0)
+  - SwifterSwift/Combine (6.0.0)
+  - SwifterSwift/CoreAnimation (6.0.0)
+  - SwifterSwift/CoreGraphics (6.0.0)
+  - SwifterSwift/CoreLocation (6.0.0)
+  - SwifterSwift/CryptoKit (6.0.0)
+  - SwifterSwift/Dispatch (6.0.0)
+  - SwifterSwift/Foundation (6.0.0)
+  - SwifterSwift/HealthKit (6.0.0)
+  - SwifterSwift/MapKit (6.0.0)
+  - SwifterSwift/SceneKit (6.0.0)
+  - SwifterSwift/SpriteKit (6.0.0)
+  - SwifterSwift/StoreKit (6.0.0)
+  - SwifterSwift/SwiftStdlib (6.0.0)
+  - SwifterSwift/UIKit (6.0.0)
+  - SwifterSwift/WebKit (6.0.0)
   - Then (3.0.0)
   - Toast-Swift (5.0.1)
 
@@ -55,36 +108,58 @@ DEPENDENCIES:
   - Hero (~> 1.6.2)
   - KafkaRefresh (~> 1.0)
   - KeychainAccess (~> 4.2.2)
+  - Moya/RxSwift (~> 15.0)
   - PromiseKit (~> 8.1.1)
   - R.swift (~> 7.3.2)
   - RAMAnimatedTabBarController (~> 5.0)
+  - RxDataSources (~> 5.0)
+  - RxTheme (~> 6.0)
   - SnapKit (~> 5.6.0)
+  - SwifterSwift
   - Then (~> 3.0.0)
   - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - Differentiator
     - Hero
     - KafkaRefresh
     - KeychainAccess
+    - Moya
     - PromiseKit
     - R.swift
     - RAMAnimatedTabBarController
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - RxTheme
     - SnapKit
+    - SwifterSwift
     - Then
     - Toast-Swift
 
 SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
   KafkaRefresh: ee64c70eb7c9426a99e68ffdae59dba9bd0b5d51
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   PromiseKit: d1be44b474e5acfa16adf007a1f49f104e10fead
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  RxTheme: be60cb14e0544b3cbd574cc37fed35ba9d61aa1f
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwifterSwift: 66843dc594f8fb890f5543c22545921d44acc004
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 9b9965e319c08ff30767f93e58fdab66ac4c0cc5
+PODFILE CHECKSUM: cd7513dd55ee4413917a0ac48edaeaead18ea1d5
 
 COCOAPODS: 1.14.3

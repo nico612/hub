@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+public class HomeTabBarController: UITabBarController {
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.view.theme.backgroundColor = themeService.attribute{ $0.secondary }
+
+
     }
 
 

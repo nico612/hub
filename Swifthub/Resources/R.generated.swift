@@ -29,9 +29,240 @@ struct _R {
     let developmentRegion = "en"
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 2 images.
+  /// This `_R.image` struct is generated, and contains static references to 79 images.
   struct image {
     let bundle: Foundation.Bundle
+
+    /// Image `icon_button_github`.
+    var icon_button_github: RswiftResources.ImageResource { .init(name: "icon_button_github", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_button_star`.
+    var icon_button_star: RswiftResources.ImageResource { .init(name: "icon_button_star", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_button_unstar`.
+    var icon_button_unstar: RswiftResources.ImageResource { .init(name: "icon_button_unstar", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_button_user_plus`.
+    var icon_button_user_plus: RswiftResources.ImageResource { .init(name: "icon_button_user_plus", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_button_user_x`.
+    var icon_button_user_x: RswiftResources.ImageResource { .init(name: "icon_button_user_x", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_acknowledgements`.
+    var icon_cell_acknowledgements: RswiftResources.ImageResource { .init(name: "icon_cell_acknowledgements", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_branch`.
+    var icon_cell_badge_branch: RswiftResources.ImageResource { .init(name: "icon_cell_badge_branch", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_collaborator`.
+    var icon_cell_badge_collaborator: RswiftResources.ImageResource { .init(name: "icon_cell_badge_collaborator", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_comment`.
+    var icon_cell_badge_comment: RswiftResources.ImageResource { .init(name: "icon_cell_badge_comment", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_commit`.
+    var icon_cell_badge_commit: RswiftResources.ImageResource { .init(name: "icon_cell_badge_commit", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_fork`.
+    var icon_cell_badge_fork: RswiftResources.ImageResource { .init(name: "icon_cell_badge_fork", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_issue`.
+    var icon_cell_badge_issue: RswiftResources.ImageResource { .init(name: "icon_cell_badge_issue", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_pull_request`.
+    var icon_cell_badge_pull_request: RswiftResources.ImageResource { .init(name: "icon_cell_badge_pull_request", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_push`.
+    var icon_cell_badge_push: RswiftResources.ImageResource { .init(name: "icon_cell_badge_push", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_repository`.
+    var icon_cell_badge_repository: RswiftResources.ImageResource { .init(name: "icon_cell_badge_repository", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_search`.
+    var icon_cell_badge_search: RswiftResources.ImageResource { .init(name: "icon_cell_badge_search", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_star`.
+    var icon_cell_badge_star: RswiftResources.ImageResource { .init(name: "icon_cell_badge_star", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_tag`.
+    var icon_cell_badge_tag: RswiftResources.ImageResource { .init(name: "icon_cell_badge_tag", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_trending`.
+    var icon_cell_badge_trending: RswiftResources.ImageResource { .init(name: "icon_cell_badge_trending", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_badge_user`.
+    var icon_cell_badge_user: RswiftResources.ImageResource { .init(name: "icon_cell_badge_user", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_check`.
+    var icon_cell_check: RswiftResources.ImageResource { .init(name: "icon_cell_check", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_cloc`.
+    var icon_cell_cloc: RswiftResources.ImageResource { .init(name: "icon_cell_cloc", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_company`.
+    var icon_cell_company: RswiftResources.ImageResource { .init(name: "icon_cell_company", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_contact_no_image`.
+    var icon_cell_contact_no_image: RswiftResources.ImageResource { .init(name: "icon_cell_contact_no_image", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_created`.
+    var icon_cell_created: RswiftResources.ImageResource { .init(name: "icon_cell_created", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_dir`.
+    var icon_cell_dir: RswiftResources.ImageResource { .init(name: "icon_cell_dir", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_disclosure`.
+    var icon_cell_disclosure: RswiftResources.ImageResource { .init(name: "icon_cell_disclosure", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_events`.
+    var icon_cell_events: RswiftResources.ImageResource { .init(name: "icon_cell_events", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_file`.
+    var icon_cell_file: RswiftResources.ImageResource { .init(name: "icon_cell_file", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_frown`.
+    var icon_cell_frown: RswiftResources.ImageResource { .init(name: "icon_cell_frown", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_git_branch`.
+    var icon_cell_git_branch: RswiftResources.ImageResource { .init(name: "icon_cell_git_branch", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_git_commit`.
+    var icon_cell_git_commit: RswiftResources.ImageResource { .init(name: "icon_cell_git_commit", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_git_fork`.
+    var icon_cell_git_fork: RswiftResources.ImageResource { .init(name: "icon_cell_git_fork", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_git_language`.
+    var icon_cell_git_language: RswiftResources.ImageResource { .init(name: "icon_cell_git_language", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_git_merge`.
+    var icon_cell_git_merge: RswiftResources.ImageResource { .init(name: "icon_cell_git_merge", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_git_pull_request`.
+    var icon_cell_git_pull_request: RswiftResources.ImageResource { .init(name: "icon_cell_git_pull_request", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_issues`.
+    var icon_cell_issues: RswiftResources.ImageResource { .init(name: "icon_cell_issues", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_language`.
+    var icon_cell_language: RswiftResources.ImageResource { .init(name: "icon_cell_language", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_link`.
+    var icon_cell_link: RswiftResources.ImageResource { .init(name: "icon_cell_link", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_logout`.
+    var icon_cell_logout: RswiftResources.ImageResource { .init(name: "icon_cell_logout", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_night_mode`.
+    var icon_cell_night_mode: RswiftResources.ImageResource { .init(name: "icon_cell_night_mode", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_profile_summary`.
+    var icon_cell_profile_summary: RswiftResources.ImageResource { .init(name: "icon_cell_profile_summary", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_readme`.
+    var icon_cell_readme: RswiftResources.ImageResource { .init(name: "icon_cell_readme", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_releases`.
+    var icon_cell_releases: RswiftResources.ImageResource { .init(name: "icon_cell_releases", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_remove`.
+    var icon_cell_remove: RswiftResources.ImageResource { .init(name: "icon_cell_remove", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_size`.
+    var icon_cell_size: RswiftResources.ImageResource { .init(name: "icon_cell_size", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_smile`.
+    var icon_cell_smile: RswiftResources.ImageResource { .init(name: "icon_cell_smile", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_source`.
+    var icon_cell_source: RswiftResources.ImageResource { .init(name: "icon_cell_source", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_star`.
+    var icon_cell_star: RswiftResources.ImageResource { .init(name: "icon_cell_star", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_stars_history`.
+    var icon_cell_stars_history: RswiftResources.ImageResource { .init(name: "icon_cell_stars_history", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_submodule`.
+    var icon_cell_submodule: RswiftResources.ImageResource { .init(name: "icon_cell_submodule", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_theme`.
+    var icon_cell_theme: RswiftResources.ImageResource { .init(name: "icon_cell_theme", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_updated`.
+    var icon_cell_updated: RswiftResources.ImageResource { .init(name: "icon_cell_updated", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_cell_whats_new`.
+    var icon_cell_whats_new: RswiftResources.ImageResource { .init(name: "icon_cell_whats_new", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_navigation_back`.
+    var icon_navigation_back: RswiftResources.ImageResource { .init(name: "icon_navigation_back", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_navigation_close`.
+    var icon_navigation_close: RswiftResources.ImageResource { .init(name: "icon_navigation_close", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_navigation_forward`.
+    var icon_navigation_forward: RswiftResources.ImageResource { .init(name: "icon_navigation_forward", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_navigation_github`.
+    var icon_navigation_github: RswiftResources.ImageResource { .init(name: "icon_navigation_github", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_navigation_history`.
+    var icon_navigation_history: RswiftResources.ImageResource { .init(name: "icon_navigation_history", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_navigation_language`.
+    var icon_navigation_language: RswiftResources.ImageResource { .init(name: "icon_navigation_language", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_navigation_refresh`.
+    var icon_navigation_refresh: RswiftResources.ImageResource { .init(name: "icon_navigation_refresh", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_navigation_stop`.
+    var icon_navigation_stop: RswiftResources.ImageResource { .init(name: "icon_navigation_stop", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_navigation_theme`.
+    var icon_navigation_theme: RswiftResources.ImageResource { .init(name: "icon_navigation_theme", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_navigation_web`.
+    var icon_navigation_web: RswiftResources.ImageResource { .init(name: "icon_navigation_web", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_tabbar_activity`.
+    var icon_tabbar_activity: RswiftResources.ImageResource { .init(name: "icon_tabbar_activity", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_tabbar_login`.
+    var icon_tabbar_login: RswiftResources.ImageResource { .init(name: "icon_tabbar_login", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_tabbar_news`.
+    var icon_tabbar_news: RswiftResources.ImageResource { .init(name: "icon_tabbar_news", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_tabbar_profile`.
+    var icon_tabbar_profile: RswiftResources.ImageResource { .init(name: "icon_tabbar_profile", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_tabbar_search`.
+    var icon_tabbar_search: RswiftResources.ImageResource { .init(name: "icon_tabbar_search", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_tabbar_settings`.
+    var icon_tabbar_settings: RswiftResources.ImageResource { .init(name: "icon_tabbar_settings", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_toast_error`.
+    var icon_toast_error: RswiftResources.ImageResource { .init(name: "icon_toast_error", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_toast_success`.
+    var icon_toast_success: RswiftResources.ImageResource { .init(name: "icon_toast_success", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_toast_warning`.
+    var icon_toast_warning: RswiftResources.ImageResource { .init(name: "icon_toast_warning", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_whatsnew_cloc`.
+    var icon_whatsnew_cloc: RswiftResources.ImageResource { .init(name: "icon_whatsnew_cloc", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_whatsnew_github`.
+    var icon_whatsnew_github: RswiftResources.ImageResource { .init(name: "icon_whatsnew_github", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_whatsnew_theme`.
+    var icon_whatsnew_theme: RswiftResources.ImageResource { .init(name: "icon_whatsnew_theme", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `icon_whatsnew_trending`.
+    var icon_whatsnew_trending: RswiftResources.ImageResource { .init(name: "icon_whatsnew_trending", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `image_no_result`.
     var image_no_result: RswiftResources.ImageResource { .init(name: "image_no_result", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
