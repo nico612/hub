@@ -12,9 +12,19 @@ let R = _R(bundle: Bundle(for: BundleFinder.self))
 
 struct _R {
   let bundle: Foundation.Bundle
+  var string: string { .init(bundle: bundle, preferredLanguages: nil, locale: nil) }
   var image: image { .init(bundle: bundle) }
   var storyboard: storyboard { .init(bundle: bundle) }
 
+  func string(bundle: Foundation.Bundle) -> string {
+    .init(bundle: bundle, preferredLanguages: nil, locale: nil)
+  }
+  func string(locale: Foundation.Locale) -> string {
+    .init(bundle: bundle, preferredLanguages: nil, locale: locale)
+  }
+  func string(preferredLanguages: [String], locale: Locale? = nil) -> string {
+    .init(bundle: bundle, preferredLanguages: preferredLanguages, locale: locale)
+  }
   func image(bundle: Foundation.Bundle) -> image {
     .init(bundle: bundle)
   }
@@ -27,6 +37,1144 @@ struct _R {
 
   struct project {
     let developmentRegion = "en"
+  }
+
+  /// This `_R.string` struct is generated, and contains static references to 1 localization tables.
+  struct string {
+    let bundle: Foundation.Bundle
+    let preferredLanguages: [String]?
+    let locale: Locale?
+    var localizable: localizable { .init(source: .init(bundle: bundle, tableName: "Localizable", preferredLanguages: preferredLanguages, locale: locale)) }
+
+    func localizable(preferredLanguages: [String]) -> localizable {
+      .init(source: .init(bundle: bundle, tableName: "Localizable", preferredLanguages: preferredLanguages, locale: locale))
+    }
+
+
+    /// This `_R.string.localizable` struct is generated, and contains static references to 160 localization keys.
+    struct localizable {
+      let source: RswiftResources.StringResource.Source
+
+      /// en translation: Back
+      ///
+      /// Key: Common.Back
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonBack: RswiftResources.StringResource { .init(key: "Common.Back", tableName: "Localizable", source: source, developmentValue: "Back", comment: nil) }
+
+      /// en translation: Cancel
+      ///
+      /// Key: Common.Cancel
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonCancel: RswiftResources.StringResource { .init(key: "Common.Cancel", tableName: "Localizable", source: source, developmentValue: "Cancel", comment: nil) }
+
+      /// en translation: Close
+      ///
+      /// Key: Common.Close
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonClose: RswiftResources.StringResource { .init(key: "Common.Close", tableName: "Localizable", source: source, developmentValue: "Close", comment: nil) }
+
+      /// en translation: Delete
+      ///
+      /// Key: Common.Delete
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonDelete: RswiftResources.StringResource { .init(key: "Common.Delete", tableName: "Localizable", source: source, developmentValue: "Delete", comment: nil) }
+
+      /// en translation: Done
+      ///
+      /// Key: Common.Done
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonDone: RswiftResources.StringResource { .init(key: "Common.Done", tableName: "Localizable", source: source, developmentValue: "Done", comment: nil) }
+
+      /// en translation: Edit
+      ///
+      /// Key: Common.Edit
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonEdit: RswiftResources.StringResource { .init(key: "Common.Edit", tableName: "Localizable", source: source, developmentValue: "Edit", comment: nil) }
+
+      /// en translation: Error
+      ///
+      /// Key: Common.Error
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonError: RswiftResources.StringResource { .init(key: "Common.Error", tableName: "Localizable", source: source, developmentValue: "Error", comment: nil) }
+
+      /// en translation: Next
+      ///
+      /// Key: Common.Next
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonNext: RswiftResources.StringResource { .init(key: "Common.Next", tableName: "Localizable", source: source, developmentValue: "Next", comment: nil) }
+
+      /// en translation: No
+      ///
+      /// Key: Common.No
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonNo: RswiftResources.StringResource { .init(key: "Common.No", tableName: "Localizable", source: source, developmentValue: "No", comment: nil) }
+
+      /// en translation: No Results
+      ///
+      /// Key: Common.NoResults
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonNoResults: RswiftResources.StringResource { .init(key: "Common.NoResults", tableName: "Localizable", source: source, developmentValue: "No Results", comment: nil) }
+
+      /// en translation: OK
+      ///
+      /// Key: Common.OK
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonOK: RswiftResources.StringResource { .init(key: "Common.OK", tableName: "Localizable", source: source, developmentValue: "OK", comment: nil) }
+
+      /// en translation: Reset
+      ///
+      /// Key: Common.Reset
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonReset: RswiftResources.StringResource { .init(key: "Common.Reset", tableName: "Localizable", source: source, developmentValue: "Reset", comment: nil) }
+
+      /// en translation: Save
+      ///
+      /// Key: Common.Save
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonSave: RswiftResources.StringResource { .init(key: "Common.Save", tableName: "Localizable", source: source, developmentValue: "Save", comment: nil) }
+
+      /// en translation: Search
+      ///
+      /// Key: Common.Search
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonSearch: RswiftResources.StringResource { .init(key: "Common.Search", tableName: "Localizable", source: source, developmentValue: "Search", comment: nil) }
+
+      /// en translation: Skip
+      ///
+      /// Key: Common.Skip
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonSkip: RswiftResources.StringResource { .init(key: "Common.Skip", tableName: "Localizable", source: source, developmentValue: "Skip", comment: nil) }
+
+      /// en translation: Success
+      ///
+      /// Key: Common.Success
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonSuccess: RswiftResources.StringResource { .init(key: "Common.Success", tableName: "Localizable", source: source, developmentValue: "Success", comment: nil) }
+
+      /// en translation: Yes
+      ///
+      /// Key: Common.Yes
+      ///
+      /// Locales: en, zh-Hans, it
+      var commonYes: RswiftResources.StringResource { .init(key: "Common.Yes", tableName: "Localizable", source: source, developmentValue: "Yes", comment: nil) }
+
+      /// en translation: Invite friends
+      ///
+      /// Key: Contacts.Navigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var contactsNavigationTitle: RswiftResources.StringResource { .init(key: "Contacts.Navigation.Title", tableName: "Localizable", source: source, developmentValue: "Invite friends", comment: nil) }
+
+      /// en translation: Settings
+      ///
+      /// Key: Contacts.PermissionDenied.Button
+      ///
+      /// Locales: en, zh-Hans, it
+      var contactsPermissionDeniedButton: RswiftResources.StringResource { .init(key: "Contacts.PermissionDenied.Button", tableName: "Localizable", source: source, developmentValue: "Settings", comment: nil) }
+
+      /// en translation: We can't continue without your  permission to access your contacts.  Try Again?
+      ///
+      /// Key: Contacts.PermissionDenied.Description
+      ///
+      /// Locales: en, zh-Hans, it
+      var contactsPermissionDeniedDescription: RswiftResources.StringResource { .init(key: "Contacts.PermissionDenied.Description", tableName: "Localizable", source: source, developmentValue: "We can't continue without your \npermission to access your contacts. \nTry Again?", comment: nil) }
+
+      /// en translation: We need your permission!
+      ///
+      /// Key: Contacts.PermissionDenied.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var contactsPermissionDeniedTitle: RswiftResources.StringResource { .init(key: "Contacts.PermissionDenied.Title", tableName: "Localizable", source: source, developmentValue: "We need your permission!", comment: nil) }
+
+      /// en translation: Events
+      ///
+      /// Key: Events.Navigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var eventsNavigationTitle: RswiftResources.StringResource { .init(key: "Events.Navigation.Title", tableName: "Localizable", source: source, developmentValue: "Events", comment: nil) }
+
+      /// en translation: Performed
+      ///
+      /// Key: Events.PerformedSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var eventsPerformedSegmentTitle: RswiftResources.StringResource { .init(key: "Events.PerformedSegment.Title", tableName: "Localizable", source: source, developmentValue: "Performed", comment: nil) }
+
+      /// en translation: Received
+      ///
+      /// Key: Events.ReceivedSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var eventsReceivedSegmentTitle: RswiftResources.StringResource { .init(key: "Events.ReceivedSegment.Title", tableName: "Localizable", source: source, developmentValue: "Received", comment: nil) }
+
+      /// en translation: Events
+      ///
+      /// Key: Home.TabBar.Events.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var homeTabBarEventsTitle: RswiftResources.StringResource { .init(key: "Home.TabBar.Events.Title", tableName: "Localizable", source: source, developmentValue: "Events", comment: nil) }
+
+      /// en translation: Login
+      ///
+      /// Key: Home.TabBar.Login.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var homeTabBarLoginTitle: RswiftResources.StringResource { .init(key: "Home.TabBar.Login.Title", tableName: "Localizable", source: source, developmentValue: "Login", comment: nil) }
+
+      /// en translation: Activities
+      ///
+      /// Key: Home.TabBar.Notifications.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var homeTabBarNotificationsTitle: RswiftResources.StringResource { .init(key: "Home.TabBar.Notifications.Title", tableName: "Localizable", source: source, developmentValue: "Activities", comment: nil) }
+
+      /// en translation: Profile
+      ///
+      /// Key: Home.TabBar.Profile.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var homeTabBarProfileTitle: RswiftResources.StringResource { .init(key: "Home.TabBar.Profile.Title", tableName: "Localizable", source: source, developmentValue: "Profile", comment: nil) }
+
+      /// en translation: Search
+      ///
+      /// Key: Home.TabBar.Search.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var homeTabBarSearchTitle: RswiftResources.StringResource { .init(key: "Home.TabBar.Search.Title", tableName: "Localizable", source: source, developmentValue: "Search", comment: nil) }
+
+      /// en translation: Settings
+      ///
+      /// Key: Home.TabBar.Settings.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var homeTabBarSettingsTitle: RswiftResources.StringResource { .init(key: "Home.TabBar.Settings.Title", tableName: "Localizable", source: source, developmentValue: "Settings", comment: nil) }
+
+      /// en translation: Welcome to SwiftHub!
+      ///
+      /// Key: Initial.NoResults
+      ///
+      /// Locales: en, zh-Hans, it
+      var initialNoResults: RswiftResources.StringResource { .init(key: "Initial.NoResults", tableName: "Localizable", source: source, developmentValue: "Welcome to SwiftHub!", comment: nil) }
+
+      /// en translation: Closed
+      ///
+      /// Key: Issues.ClosedSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var issuesClosedSegmentTitle: RswiftResources.StringResource { .init(key: "Issues.ClosedSegment.Title", tableName: "Localizable", source: source, developmentValue: "Closed", comment: nil) }
+
+      /// en translation: Issues
+      ///
+      /// Key: Issues.Navigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var issuesNavigationTitle: RswiftResources.StringResource { .init(key: "Issues.Navigation.Title", tableName: "Localizable", source: source, developmentValue: "Issues", comment: nil) }
+
+      /// en translation: Open
+      ///
+      /// Key: Issues.OpenSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var issuesOpenSegmentTitle: RswiftResources.StringResource { .init(key: "Issues.OpenSegment.Title", tableName: "Localizable", source: source, developmentValue: "Open", comment: nil) }
+
+      /// en translation: Language
+      ///
+      /// Key: Language.Navigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var languageNavigationTitle: RswiftResources.StringResource { .init(key: "Language.Navigation.Title", tableName: "Localizable", source: source, developmentValue: "Language", comment: nil) }
+
+      /// en translation: All
+      ///
+      /// Key: Languages.AllSection.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var languagesAllSectionTitle: RswiftResources.StringResource { .init(key: "Languages.AllSection.Title", tableName: "Localizable", source: source, developmentValue: "All", comment: nil) }
+
+      /// en translation: Languages
+      ///
+      /// Key: Languages.Navigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var languagesNavigationTitle: RswiftResources.StringResource { .init(key: "Languages.Navigation.Title", tableName: "Localizable", source: source, developmentValue: "Languages", comment: nil) }
+
+      /// en translation: Popular
+      ///
+      /// Key: Languages.PopularSection.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var languagesPopularSectionTitle: RswiftResources.StringResource { .init(key: "Languages.PopularSection.Title", tableName: "Localizable", source: source, developmentValue: "Popular", comment: nil) }
+
+      /// en translation: All Languages
+      ///
+      /// Key: Languages.allButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var languagesAllButtonTitle: RswiftResources.StringResource { .init(key: "Languages.allButton.Title", tableName: "Localizable", source: source, developmentValue: "All Languages", comment: nil) }
+
+      /// en translation: Login
+      ///
+      /// Key: Login.BasicLoginButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginBasicLoginButtonTitle: RswiftResources.StringResource { .init(key: "Login.BasicLoginButton.Title", tableName: "Localizable", source: source, developmentValue: "Login", comment: nil) }
+
+      /// en translation: Basic
+      ///
+      /// Key: Login.BasicSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginBasicSegmentTitle: RswiftResources.StringResource { .init(key: "Login.BasicSegment.Title", tableName: "Localizable", source: source, developmentValue: "Basic", comment: nil) }
+
+      /// en translation: For API requests using Basic Authentication or OAuth, you can make up to 5000 requests per hour.   For unauthenticated requests, the rate limit allows for up to 60 requests per hour.
+      ///
+      /// Key: Login.DetailLabel.Text
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginDetailLabelText: RswiftResources.StringResource { .init(key: "Login.DetailLabel.Text", tableName: "Localizable", source: source, developmentValue: "For API requests using Basic Authentication or OAuth, you can make up to 5000 requests per hour. \n\nFor unauthenticated requests, the rate limit allows for up to 60 requests per hour.", comment: nil) }
+
+      /// en translation: Please check your login or password
+      ///
+      /// Key: Login.LoginFailed.Description
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginLoginFailedDescription: RswiftResources.StringResource { .init(key: "Login.LoginFailed.Description", tableName: "Localizable", source: source, developmentValue: "Please check your login or password", comment: nil) }
+
+      /// en translation: login
+      ///
+      /// Key: Login.LoginTextField.Placeholder
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginLoginTextFieldPlaceholder: RswiftResources.StringResource { .init(key: "Login.LoginTextField.Placeholder", tableName: "Localizable", source: source, developmentValue: "login", comment: nil) }
+
+      /// en translation: OAuth
+      ///
+      /// Key: Login.OAuthSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginOAuthSegmentTitle: RswiftResources.StringResource { .init(key: "Login.OAuthSegment.Title", tableName: "Localizable", source: source, developmentValue: "OAuth", comment: nil) }
+
+      /// en translation: Sign in with Github
+      ///
+      /// Key: Login.OAuthloginButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginOAuthloginButtonTitle: RswiftResources.StringResource { .init(key: "Login.OAuthloginButton.Title", tableName: "Localizable", source: source, developmentValue: "Sign in with Github", comment: nil) }
+
+      /// en translation: password
+      ///
+      /// Key: Login.PasswordTextField.Placeholder
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginPasswordTextFieldPlaceholder: RswiftResources.StringResource { .init(key: "Login.PasswordTextField.Placeholder", tableName: "Localizable", source: source, developmentValue: "password", comment: nil) }
+
+      /// en translation: These permissions are required %@
+      ///
+      /// Key: Login.PersonalDetailLabel.Text
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginPersonalDetailLabelText: RswiftResources.StringResource1<String> { .init(key: "Login.PersonalDetailLabel.Text", tableName: "Localizable", source: source, developmentValue: "These permissions are required\n%@", comment: nil) }
+
+      /// en translation: Login
+      ///
+      /// Key: Login.PersonalLoginButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginPersonalLoginButtonTitle: RswiftResources.StringResource { .init(key: "Login.PersonalLoginButton.Title", tableName: "Localizable", source: source, developmentValue: "Login", comment: nil) }
+
+      /// en translation: Personal
+      ///
+      /// Key: Login.PersonalSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginPersonalSegmentTitle: RswiftResources.StringResource { .init(key: "Login.PersonalSegment.Title", tableName: "Localizable", source: source, developmentValue: "Personal", comment: nil) }
+
+      /// en translation: Personal Access Token
+      ///
+      /// Key: Login.PersonalTitleLabel.Text
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginPersonalTitleLabelText: RswiftResources.StringResource { .init(key: "Login.PersonalTitleLabel.Text", tableName: "Localizable", source: source, developmentValue: "Personal Access Token", comment: nil) }
+
+      /// en translation: personal access token
+      ///
+      /// Key: Login.PersonalTokenTextField.Placeholder
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginPersonalTokenTextFieldPlaceholder: RswiftResources.StringResource { .init(key: "Login.PersonalTokenTextField.Placeholder", tableName: "Localizable", source: source, developmentValue: "personal access token", comment: nil) }
+
+      /// en translation: Welcome to SwiftHub
+      ///
+      /// Key: Login.TitleLabel.Text
+      ///
+      /// Locales: en, zh-Hans, it
+      var loginTitleLabelText: RswiftResources.StringResource { .init(key: "Login.TitleLabel.Text", tableName: "Localizable", source: source, developmentValue: "Welcome to SwiftHub", comment: nil) }
+
+      /// en translation: All
+      ///
+      /// Key: Notifications.AllSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var notificationsAllSegmentTitle: RswiftResources.StringResource { .init(key: "Notifications.AllSegment.Title", tableName: "Localizable", source: source, developmentValue: "All", comment: nil) }
+
+      /// en translation: All notifications marked as read
+      ///
+      /// Key: Notifications.MarkAsRead.Success
+      ///
+      /// Locales: en, zh-Hans, it
+      var notificationsMarkAsReadSuccess: RswiftResources.StringResource { .init(key: "Notifications.MarkAsRead.Success", tableName: "Localizable", source: source, developmentValue: "All notifications marked as read", comment: nil) }
+
+      /// en translation: Notifications
+      ///
+      /// Key: Notifications.Navigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var notificationsNavigationTitle: RswiftResources.StringResource { .init(key: "Notifications.Navigation.Title", tableName: "Localizable", source: source, developmentValue: "Notifications", comment: nil) }
+
+      /// en translation: Participating
+      ///
+      /// Key: Notifications.ParticipatingSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var notificationsParticipatingSegmentTitle: RswiftResources.StringResource { .init(key: "Notifications.ParticipatingSegment.Title", tableName: "Localizable", source: source, developmentValue: "Participating", comment: nil) }
+
+      /// en translation: Unread
+      ///
+      /// Key: Notifications.UnreadSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var notificationsUnreadSegmentTitle: RswiftResources.StringResource { .init(key: "Notifications.UnreadSegment.Title", tableName: "Localizable", source: source, developmentValue: "Unread", comment: nil) }
+
+      /// en translation: Forks
+      ///
+      /// Key: Repositories.ForksNavigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoriesForksNavigationTitle: RswiftResources.StringResource { .init(key: "Repositories.ForksNavigation.Title", tableName: "Localizable", source: source, developmentValue: "Forks", comment: nil) }
+
+      /// en translation: Repositories
+      ///
+      /// Key: Repositories.RepositoriesNavigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoriesRepositoriesNavigationTitle: RswiftResources.StringResource { .init(key: "Repositories.RepositoriesNavigation.Title", tableName: "Localizable", source: source, developmentValue: "Repositories", comment: nil) }
+
+      /// en translation: Starred
+      ///
+      /// Key: Repositories.StarredNavigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoriesStarredNavigationTitle: RswiftResources.StringResource { .init(key: "Repositories.StarredNavigation.Title", tableName: "Localizable", source: source, developmentValue: "Starred", comment: nil) }
+
+      /// en translation: Branches
+      ///
+      /// Key: Repository.BranchesCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryBranchesCellTitle: RswiftResources.StringResource { .init(key: "Repository.BranchesCell.Title", tableName: "Localizable", source: source, developmentValue: "Branches", comment: nil) }
+
+      /// en translation: Commits
+      ///
+      /// Key: Repository.CommitsCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryCommitsCellTitle: RswiftResources.StringResource { .init(key: "Repository.CommitsCell.Title", tableName: "Localizable", source: source, developmentValue: "Commits", comment: nil) }
+
+      /// en translation: Contributors
+      ///
+      /// Key: Repository.ContributorsCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryContributorsCellTitle: RswiftResources.StringResource { .init(key: "Repository.ContributorsCell.Title", tableName: "Localizable", source: source, developmentValue: "Contributors", comment: nil) }
+
+      /// en translation: Count Lines of Code
+      ///
+      /// Key: Repository.CountLinesOfCodeCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryCountLinesOfCodeCellTitle: RswiftResources.StringResource { .init(key: "Repository.CountLinesOfCodeCell.Title", tableName: "Localizable", source: source, developmentValue: "Count Lines of Code", comment: nil) }
+
+      /// en translation: Created
+      ///
+      /// Key: Repository.CreatedCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryCreatedCellTitle: RswiftResources.StringResource { .init(key: "Repository.CreatedCell.Title", tableName: "Localizable", source: source, developmentValue: "Created", comment: nil) }
+
+      /// en translation: Events
+      ///
+      /// Key: Repository.EventsCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryEventsCellTitle: RswiftResources.StringResource { .init(key: "Repository.EventsCell.Title", tableName: "Localizable", source: source, developmentValue: "Events", comment: nil) }
+
+      /// en translation: Forks
+      ///
+      /// Key: Repository.ForksButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryForksButtonTitle: RswiftResources.StringResource { .init(key: "Repository.ForksButton.Title", tableName: "Localizable", source: source, developmentValue: "Forks", comment: nil) }
+
+      /// en translation: Homepage
+      ///
+      /// Key: Repository.HomepageCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryHomepageCellTitle: RswiftResources.StringResource { .init(key: "Repository.HomepageCell.Title", tableName: "Localizable", source: source, developmentValue: "Homepage", comment: nil) }
+
+      /// en translation: Issues
+      ///
+      /// Key: Repository.IssuesCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryIssuesCellTitle: RswiftResources.StringResource { .init(key: "Repository.IssuesCell.Title", tableName: "Localizable", source: source, developmentValue: "Issues", comment: nil) }
+
+      /// en translation: Language
+      ///
+      /// Key: Repository.LanguageCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryLanguageCellTitle: RswiftResources.StringResource { .init(key: "Repository.LanguageCell.Title", tableName: "Localizable", source: source, developmentValue: "Language", comment: nil) }
+
+      /// en translation: My Notifications
+      ///
+      /// Key: Repository.NotificationsCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryNotificationsCellTitle: RswiftResources.StringResource { .init(key: "Repository.NotificationsCell.Title", tableName: "Localizable", source: source, developmentValue: "My Notifications", comment: nil) }
+
+      /// en translation: Forked from
+      ///
+      /// Key: Repository.ParentCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryParentCellTitle: RswiftResources.StringResource { .init(key: "Repository.ParentCell.Title", tableName: "Localizable", source: source, developmentValue: "Forked from", comment: nil) }
+
+      /// en translation: Pull Requests
+      ///
+      /// Key: Repository.PullRequestsCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryPullRequestsCellTitle: RswiftResources.StringResource { .init(key: "Repository.PullRequestsCell.Title", tableName: "Localizable", source: source, developmentValue: "Pull Requests", comment: nil) }
+
+      /// en translation: Readme
+      ///
+      /// Key: Repository.ReadmeCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryReadmeCellTitle: RswiftResources.StringResource { .init(key: "Repository.ReadmeCell.Title", tableName: "Localizable", source: source, developmentValue: "Readme", comment: nil) }
+
+      /// en translation: Releases
+      ///
+      /// Key: Repository.ReleasesCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryReleasesCellTitle: RswiftResources.StringResource { .init(key: "Repository.ReleasesCell.Title", tableName: "Localizable", source: source, developmentValue: "Releases", comment: nil) }
+
+      /// en translation: Size
+      ///
+      /// Key: Repository.SizeCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositorySizeCellTitle: RswiftResources.StringResource { .init(key: "Repository.SizeCell.Title", tableName: "Localizable", source: source, developmentValue: "Size", comment: nil) }
+
+      /// en translation: Source Code
+      ///
+      /// Key: Repository.SourceCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositorySourceCellTitle: RswiftResources.StringResource { .init(key: "Repository.SourceCell.Title", tableName: "Localizable", source: source, developmentValue: "Source Code", comment: nil) }
+
+      /// en translation: Stars
+      ///
+      /// Key: Repository.StarsButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryStarsButtonTitle: RswiftResources.StringResource { .init(key: "Repository.StarsButton.Title", tableName: "Localizable", source: source, developmentValue: "Stars", comment: nil) }
+
+      /// en translation: Stars History
+      ///
+      /// Key: Repository.StarsHistoryCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryStarsHistoryCellTitle: RswiftResources.StringResource { .init(key: "Repository.StarsHistoryCell.Title", tableName: "Localizable", source: source, developmentValue: "Stars History", comment: nil) }
+
+      /// en translation: Updated
+      ///
+      /// Key: Repository.UpdatedCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryUpdatedCellTitle: RswiftResources.StringResource { .init(key: "Repository.UpdatedCell.Title", tableName: "Localizable", source: source, developmentValue: "Updated", comment: nil) }
+
+      /// en translation: Watchers
+      ///
+      /// Key: Repository.WatchersButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var repositoryWatchersButtonTitle: RswiftResources.StringResource { .init(key: "Repository.WatchersButton.Title", tableName: "Localizable", source: source, developmentValue: "Watchers", comment: nil) }
+
+      /// en translation: Daily
+      ///
+      /// Key: Search.DailySegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchDailySegmentTitle: RswiftResources.StringResource { .init(key: "Search.DailySegment.Title", tableName: "Localizable", source: source, developmentValue: "Daily", comment: nil) }
+
+      /// en translation: Monthly
+      ///
+      /// Key: Search.MonthlySegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchMonthlySegmentTitle: RswiftResources.StringResource { .init(key: "Search.MonthlySegment.Title", tableName: "Localizable", source: source, developmentValue: "Monthly", comment: nil) }
+
+      /// en translation: Repositories
+      ///
+      /// Key: Search.RepositoriesSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchRepositoriesSegmentTitle: RswiftResources.StringResource { .init(key: "Search.RepositoriesSegment.Title", tableName: "Localizable", source: source, developmentValue: "Repositories", comment: nil) }
+
+      /// en translation: %@ repositories
+      ///
+      /// Key: Search.RepositoriesTotalCount.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchRepositoriesTotalCountTitle: RswiftResources.StringResource1<String> { .init(key: "Search.RepositoriesTotalCount.Title", tableName: "Localizable", source: source, developmentValue: "%@ repositories", comment: nil) }
+
+      /// en translation: Global Search
+      ///
+      /// Key: Search.SearchBar.Placeholder
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSearchBarPlaceholder: RswiftResources.StringResource { .init(key: "Search.SearchBar.Placeholder", tableName: "Localizable", source: source, developmentValue: "Global Search", comment: nil) }
+
+      /// en translation: Search
+      ///
+      /// Key: Search.SearchSection.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSearchSectionTitle: RswiftResources.StringResource { .init(key: "Search.SearchSection.Title", tableName: "Localizable", source: source, developmentValue: "Search", comment: nil) }
+
+      /// en translation: Search results for %@
+      ///
+      /// Key: Search.SearchSectionWithLanguage.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSearchSectionWithLanguageTitle: RswiftResources.StringResource1<String> { .init(key: "Search.SearchSectionWithLanguage.Title", tableName: "Localizable", source: source, developmentValue: "Search results for %@", comment: nil) }
+
+      /// en translation: Search
+      ///
+      /// Key: Search.SearchSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSearchSegmentTitle: RswiftResources.StringResource { .init(key: "Search.SearchSegment.Title", tableName: "Localizable", source: source, developmentValue: "Search", comment: nil) }
+
+      /// en translation: Best match
+      ///
+      /// Key: Search.SortRepositories.BestMatch.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortRepositoriesBestMatchTitle: RswiftResources.StringResource { .init(key: "Search.SortRepositories.BestMatch.Title", tableName: "Localizable", source: source, developmentValue: "Best match", comment: nil) }
+
+      /// en translation: Fewest forks
+      ///
+      /// Key: Search.SortRepositories.FewestForks.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortRepositoriesFewestForksTitle: RswiftResources.StringResource { .init(key: "Search.SortRepositories.FewestForks.Title", tableName: "Localizable", source: source, developmentValue: "Fewest forks", comment: nil) }
+
+      /// en translation: Fewest stars
+      ///
+      /// Key: Search.SortRepositories.FewestStars.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortRepositoriesFewestStarsTitle: RswiftResources.StringResource { .init(key: "Search.SortRepositories.FewestStars.Title", tableName: "Localizable", source: source, developmentValue: "Fewest stars", comment: nil) }
+
+      /// en translation: Last recently updated
+      ///
+      /// Key: Search.SortRepositories.LastRecentlyUpdated.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortRepositoriesLastRecentlyUpdatedTitle: RswiftResources.StringResource { .init(key: "Search.SortRepositories.LastRecentlyUpdated.Title", tableName: "Localizable", source: source, developmentValue: "Last recently updated", comment: nil) }
+
+      /// en translation: Most forks
+      ///
+      /// Key: Search.SortRepositories.MostForks.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortRepositoriesMostForksTitle: RswiftResources.StringResource { .init(key: "Search.SortRepositories.MostForks.Title", tableName: "Localizable", source: source, developmentValue: "Most forks", comment: nil) }
+
+      /// en translation: Most stars
+      ///
+      /// Key: Search.SortRepositories.MostStars.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortRepositoriesMostStarsTitle: RswiftResources.StringResource { .init(key: "Search.SortRepositories.MostStars.Title", tableName: "Localizable", source: source, developmentValue: "Most stars", comment: nil) }
+
+      /// en translation: Recently updated
+      ///
+      /// Key: Search.SortRepositories.RecentlyUpdated.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortRepositoriesRecentlyUpdatedTitle: RswiftResources.StringResource { .init(key: "Search.SortRepositories.RecentlyUpdated.Title", tableName: "Localizable", source: source, developmentValue: "Recently updated", comment: nil) }
+
+      /// en translation: Best match
+      ///
+      /// Key: Search.SortUsers.BestMatch.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortUsersBestMatchTitle: RswiftResources.StringResource { .init(key: "Search.SortUsers.BestMatch.Title", tableName: "Localizable", source: source, developmentValue: "Best match", comment: nil) }
+
+      /// en translation: Fewest followers
+      ///
+      /// Key: Search.SortUsers.FewestFollowers.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortUsersFewestFollowersTitle: RswiftResources.StringResource { .init(key: "Search.SortUsers.FewestFollowers.Title", tableName: "Localizable", source: source, developmentValue: "Fewest followers", comment: nil) }
+
+      /// en translation: Fewest repositories
+      ///
+      /// Key: Search.SortUsers.FewestRepositories.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortUsersFewestRepositoriesTitle: RswiftResources.StringResource { .init(key: "Search.SortUsers.FewestRepositories.Title", tableName: "Localizable", source: source, developmentValue: "Fewest repositories", comment: nil) }
+
+      /// en translation: Least recently joined
+      ///
+      /// Key: Search.SortUsers.LeastRecentlyJoined.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortUsersLeastRecentlyJoinedTitle: RswiftResources.StringResource { .init(key: "Search.SortUsers.LeastRecentlyJoined.Title", tableName: "Localizable", source: source, developmentValue: "Least recently joined", comment: nil) }
+
+      /// en translation: Most followers
+      ///
+      /// Key: Search.SortUsers.MostFollowers.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortUsersMostFollowersTitle: RswiftResources.StringResource { .init(key: "Search.SortUsers.MostFollowers.Title", tableName: "Localizable", source: source, developmentValue: "Most followers", comment: nil) }
+
+      /// en translation: Most recently joined
+      ///
+      /// Key: Search.SortUsers.MostRecentlyJoined.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortUsersMostRecentlyJoinedTitle: RswiftResources.StringResource { .init(key: "Search.SortUsers.MostRecentlyJoined.Title", tableName: "Localizable", source: source, developmentValue: "Most recently joined", comment: nil) }
+
+      /// en translation: Most repositories
+      ///
+      /// Key: Search.SortUsers.MostRepositories.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchSortUsersMostRepositoriesTitle: RswiftResources.StringResource { .init(key: "Search.SortUsers.MostRepositories.Title", tableName: "Localizable", source: source, developmentValue: "Most repositories", comment: nil) }
+
+      /// en translation: Trending
+      ///
+      /// Key: Search.TrendingSection.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchTrendingSectionTitle: RswiftResources.StringResource { .init(key: "Search.TrendingSection.Title", tableName: "Localizable", source: source, developmentValue: "Trending", comment: nil) }
+
+      /// en translation: Trending results for %@
+      ///
+      /// Key: Search.TrendingSectionWithLanguage.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchTrendingSectionWithLanguageTitle: RswiftResources.StringResource1<String> { .init(key: "Search.TrendingSectionWithLanguage.Title", tableName: "Localizable", source: source, developmentValue: "Trending results for %@", comment: nil) }
+
+      /// en translation: Trending
+      ///
+      /// Key: Search.TrendingSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchTrendingSegmentTitle: RswiftResources.StringResource { .init(key: "Search.TrendingSegment.Title", tableName: "Localizable", source: source, developmentValue: "Trending", comment: nil) }
+
+      /// en translation: Users
+      ///
+      /// Key: Search.UsersSegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchUsersSegmentTitle: RswiftResources.StringResource { .init(key: "Search.UsersSegment.Title", tableName: "Localizable", source: source, developmentValue: "Users", comment: nil) }
+
+      /// en translation: %@ users
+      ///
+      /// Key: Search.UsersTotalCount.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchUsersTotalCountTitle: RswiftResources.StringResource1<String> { .init(key: "Search.UsersTotalCount.Title", tableName: "Localizable", source: source, developmentValue: "%@ users", comment: nil) }
+
+      /// en translation: Weekly
+      ///
+      /// Key: Search.WeeklySegment.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var searchWeeklySegmentTitle: RswiftResources.StringResource { .init(key: "Search.WeeklySegment.Title", tableName: "Localizable", source: source, developmentValue: "Weekly", comment: nil) }
+
+      /// en translation: Account
+      ///
+      /// Key: Settings.AccountSection.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsAccountSectionTitle: RswiftResources.StringResource { .init(key: "Settings.AccountSection.Title", tableName: "Localizable", source: source, developmentValue: "Account", comment: nil) }
+
+      /// en translation: Acknowledgements
+      ///
+      /// Key: Settings.Acknowledgements.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsAcknowledgementsTitle: RswiftResources.StringResource { .init(key: "Settings.Acknowledgements.Title", tableName: "Localizable", source: source, developmentValue: "Acknowledgements", comment: nil) }
+
+      /// en translation: Ads enabled
+      ///
+      /// Key: Settings.Banner.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsBannerTitle: RswiftResources.StringResource { .init(key: "Settings.Banner.Title", tableName: "Localizable", source: source, developmentValue: "Ads enabled", comment: nil) }
+
+      /// en translation: Invite friends
+      ///
+      /// Key: Settings.Contacts.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsContactsTitle: RswiftResources.StringResource { .init(key: "Settings.Contacts.Title", tableName: "Localizable", source: source, developmentValue: "Invite friends", comment: nil) }
+
+      /// en translation: Language
+      ///
+      /// Key: Settings.Language.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsLanguageTitle: RswiftResources.StringResource { .init(key: "Settings.Language.Title", tableName: "Localizable", source: source, developmentValue: "Language", comment: nil) }
+
+      /// en translation: Log Out
+      ///
+      /// Key: Settings.LogOut.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsLogOutTitle: RswiftResources.StringResource { .init(key: "Settings.LogOut.Title", tableName: "Localizable", source: source, developmentValue: "Log Out", comment: nil) }
+
+      /// en translation: Logout
+      ///
+      /// Key: Settings.Logout.Alert.ConfirmButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsLogoutAlertConfirmButtonTitle: RswiftResources.StringResource { .init(key: "Settings.Logout.Alert.ConfirmButton.Title", tableName: "Localizable", source: source, developmentValue: "Logout", comment: nil) }
+
+      /// en translation: Are you sure want to log out from SwiftHub?
+      ///
+      /// Key: Settings.Logout.Alert.Message
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsLogoutAlertMessage: RswiftResources.StringResource { .init(key: "Settings.Logout.Alert.Message", tableName: "Localizable", source: source, developmentValue: "Are you sure want to log out from SwiftHub?", comment: nil) }
+
+      /// en translation: Settings
+      ///
+      /// Key: Settings.Navigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsNavigationTitle: RswiftResources.StringResource { .init(key: "Settings.Navigation.Title", tableName: "Localizable", source: source, developmentValue: "Settings", comment: nil) }
+
+      /// en translation: Night mode
+      ///
+      /// Key: Settings.NightMode.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsNightModeTitle: RswiftResources.StringResource { .init(key: "Settings.NightMode.Title", tableName: "Localizable", source: source, developmentValue: "Night mode", comment: nil) }
+
+      /// en translation: Preferences
+      ///
+      /// Key: Settings.PreferencesSection.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsPreferencesSectionTitle: RswiftResources.StringResource { .init(key: "Settings.PreferencesSection.Title", tableName: "Localizable", source: source, developmentValue: "Preferences", comment: nil) }
+
+      /// en translation: My Projects
+      ///
+      /// Key: Settings.ProjectsSection.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsProjectsSectionTitle: RswiftResources.StringResource { .init(key: "Settings.ProjectsSection.Title", tableName: "Localizable", source: source, developmentValue: "My Projects", comment: nil) }
+
+      /// en translation: Cache Successfully Cleared
+      ///
+      /// Key: Settings.RemoveCache.Alert.SuccessMessage
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsRemoveCacheAlertSuccessMessage: RswiftResources.StringResource { .init(key: "Settings.RemoveCache.Alert.SuccessMessage", tableName: "Localizable", source: source, developmentValue: "Cache Successfully Cleared", comment: nil) }
+
+      /// en translation: Remove cache
+      ///
+      /// Key: Settings.RemoveCache.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsRemoveCacheTitle: RswiftResources.StringResource { .init(key: "Settings.RemoveCache.Title", tableName: "Localizable", source: source, developmentValue: "Remove cache", comment: nil) }
+
+      /// en translation: Support
+      ///
+      /// Key: Settings.SupportSection.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsSupportSectionTitle: RswiftResources.StringResource { .init(key: "Settings.SupportSection.Title", tableName: "Localizable", source: source, developmentValue: "Support", comment: nil) }
+
+      /// en translation: Color theme
+      ///
+      /// Key: Settings.Theme.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsThemeTitle: RswiftResources.StringResource { .init(key: "Settings.Theme.Title", tableName: "Localizable", source: source, developmentValue: "Color theme", comment: nil) }
+
+      /// en translation: Whats New
+      ///
+      /// Key: Settings.WhatsNew.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var settingsWhatsNewTitle: RswiftResources.StringResource { .init(key: "Settings.WhatsNew.Title", tableName: "Localizable", source: source, developmentValue: "Whats New", comment: nil) }
+
+      /// en translation: Color theme
+      ///
+      /// Key: Theme.Navigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var themeNavigationTitle: RswiftResources.StringResource { .init(key: "Theme.Navigation.Title", tableName: "Localizable", source: source, developmentValue: "Color theme", comment: nil) }
+
+      /// en translation: Back online
+      ///
+      /// Key: Toast.ConnectionBack.Message
+      ///
+      /// Locales: en, zh-Hans, it
+      var toastConnectionBackMessage: RswiftResources.StringResource { .init(key: "Toast.ConnectionBack.Message", tableName: "Localizable", source: source, developmentValue: "Back online", comment: nil) }
+
+      /// en translation: No connection
+      ///
+      /// Key: Toast.ConnectionLost.Message
+      ///
+      /// Locales: en, zh-Hans, it
+      var toastConnectionLostMessage: RswiftResources.StringResource { .init(key: "Toast.ConnectionLost.Message", tableName: "Localizable", source: source, developmentValue: "No connection", comment: nil) }
+
+      /// en translation: Blog
+      ///
+      /// Key: User.BlogCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userBlogCellTitle: RswiftResources.StringResource { .init(key: "User.BlogCell.Title", tableName: "Localizable", source: source, developmentValue: "Blog", comment: nil) }
+
+      /// en translation: Company
+      ///
+      /// Key: User.CompanyCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userCompanyCellTitle: RswiftResources.StringResource { .init(key: "User.CompanyCell.Title", tableName: "Localizable", source: source, developmentValue: "Company", comment: nil) }
+
+      /// en translation: Contributions
+      ///
+      /// Key: User.ContributionsCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userContributionsCellTitle: RswiftResources.StringResource { .init(key: "User.ContributionsCell.Title", tableName: "Localizable", source: source, developmentValue: "Contributions", comment: nil) }
+
+      /// en translation: Created
+      ///
+      /// Key: User.CreatedCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userCreatedCellTitle: RswiftResources.StringResource { .init(key: "User.CreatedCell.Title", tableName: "Localizable", source: source, developmentValue: "Created", comment: nil) }
+
+      /// en translation: Events
+      ///
+      /// Key: User.EventsCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userEventsCellTitle: RswiftResources.StringResource { .init(key: "User.EventsCell.Title", tableName: "Localizable", source: source, developmentValue: "Events", comment: nil) }
+
+      /// en translation: Followers
+      ///
+      /// Key: User.FollowersButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userFollowersButtonTitle: RswiftResources.StringResource { .init(key: "User.FollowersButton.Title", tableName: "Localizable", source: source, developmentValue: "Followers", comment: nil) }
+
+      /// en translation: Following
+      ///
+      /// Key: User.FollowingButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userFollowingButtonTitle: RswiftResources.StringResource { .init(key: "User.FollowingButton.Title", tableName: "Localizable", source: source, developmentValue: "Following", comment: nil) }
+
+      /// en translation: Organizations
+      ///
+      /// Key: User.OrganizationsSection.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userOrganizationsSectionTitle: RswiftResources.StringResource { .init(key: "User.OrganizationsSection.Title", tableName: "Localizable", source: source, developmentValue: "Organizations", comment: nil) }
+
+      /// en translation: Pinned
+      ///
+      /// Key: User.PinnedSection.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userPinnedSectionTitle: RswiftResources.StringResource { .init(key: "User.PinnedSection.Title", tableName: "Localizable", source: source, developmentValue: "Pinned", comment: nil) }
+
+      /// en translation: Profile Summary
+      ///
+      /// Key: User.ProfileSummaryCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userProfileSummaryCellTitle: RswiftResources.StringResource { .init(key: "User.ProfileSummaryCell.Title", tableName: "Localizable", source: source, developmentValue: "Profile Summary", comment: nil) }
+
+      /// en translation: Repositories
+      ///
+      /// Key: User.RepositoriesButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userRepositoriesButtonTitle: RswiftResources.StringResource { .init(key: "User.RepositoriesButton.Title", tableName: "Localizable", source: source, developmentValue: "Repositories", comment: nil) }
+
+      /// en translation: Stars
+      ///
+      /// Key: User.StarsCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userStarsCellTitle: RswiftResources.StringResource { .init(key: "User.StarsCell.Title", tableName: "Localizable", source: source, developmentValue: "Stars", comment: nil) }
+
+      /// en translation: Updated
+      ///
+      /// Key: User.UpdatedCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userUpdatedCellTitle: RswiftResources.StringResource { .init(key: "User.UpdatedCell.Title", tableName: "Localizable", source: source, developmentValue: "Updated", comment: nil) }
+
+      /// en translation: Watching
+      ///
+      /// Key: User.WatchingCell.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var userWatchingCellTitle: RswiftResources.StringResource { .init(key: "User.WatchingCell.Title", tableName: "Localizable", source: source, developmentValue: "Watching", comment: nil) }
+
+      /// en translation: Contributors
+      ///
+      /// Key: Users.ContributorsNavigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var usersContributorsNavigationTitle: RswiftResources.StringResource { .init(key: "Users.ContributorsNavigation.Title", tableName: "Localizable", source: source, developmentValue: "Contributors", comment: nil) }
+
+      /// en translation: Followers
+      ///
+      /// Key: Users.FollowersNavigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var usersFollowersNavigationTitle: RswiftResources.StringResource { .init(key: "Users.FollowersNavigation.Title", tableName: "Localizable", source: source, developmentValue: "Followers", comment: nil) }
+
+      /// en translation: Following
+      ///
+      /// Key: Users.FollowingNavigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var usersFollowingNavigationTitle: RswiftResources.StringResource { .init(key: "Users.FollowingNavigation.Title", tableName: "Localizable", source: source, developmentValue: "Following", comment: nil) }
+
+      /// en translation: Stargazers
+      ///
+      /// Key: Users.StargazersNavigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var usersStargazersNavigationTitle: RswiftResources.StringResource { .init(key: "Users.StargazersNavigation.Title", tableName: "Localizable", source: source, developmentValue: "Stargazers", comment: nil) }
+
+      /// en translation: Watchers
+      ///
+      /// Key: Users.WatchersNavigation.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var usersWatchersNavigationTitle: RswiftResources.StringResource { .init(key: "Users.WatchersNavigation.Title", tableName: "Localizable", source: source, developmentValue: "Watchers", comment: nil) }
+
+      /// en translation: Continue
+      ///
+      /// Key: WhatsNew.CompletionButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewCompletionButtonTitle: RswiftResources.StringResource { .init(key: "WhatsNew.CompletionButton.Title", tableName: "Localizable", source: source, developmentValue: "Continue", comment: nil) }
+
+      /// en translation: View on GitHub
+      ///
+      /// Key: WhatsNew.DetailButton.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewDetailButtonTitle: RswiftResources.StringResource { .init(key: "WhatsNew.DetailButton.Title", tableName: "Localizable", source: source, developmentValue: "View on GitHub", comment: nil) }
+
+      /// en translation: Tool for counting lines of code from repositories
+      ///
+      /// Key: WhatsNew.Item1.Subtitle
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewItem1Subtitle: RswiftResources.StringResource { .init(key: "WhatsNew.Item1.Subtitle", tableName: "Localizable", source: source, developmentValue: "Tool for counting lines of code from repositories", comment: nil) }
+
+      /// en translation: Count Lines of Code
+      ///
+      /// Key: WhatsNew.Item1.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewItem1Title: RswiftResources.StringResource { .init(key: "WhatsNew.Item1.Title", tableName: "Localizable", source: source, developmentValue: "Count Lines of Code", comment: nil) }
+
+      /// en translation: You can apply different themes with Light and Dark modes
+      ///
+      /// Key: WhatsNew.Item2.Subtitle
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewItem2Subtitle: RswiftResources.StringResource { .init(key: "WhatsNew.Item2.Subtitle", tableName: "Localizable", source: source, developmentValue: "You can apply different themes with Light and Dark modes", comment: nil) }
+
+      /// en translation: Themes
+      ///
+      /// Key: WhatsNew.Item2.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewItem2Title: RswiftResources.StringResource { .init(key: "WhatsNew.Item2.Title", tableName: "Localizable", source: source, developmentValue: "Themes", comment: nil) }
+
+      /// en translation: SwiftHub is open source Stars are welcome ★
+      ///
+      /// Key: WhatsNew.Item3.Subtitle
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewItem3Subtitle: RswiftResources.StringResource { .init(key: "WhatsNew.Item3.Subtitle", tableName: "Localizable", source: source, developmentValue: "SwiftHub is open source\nStars are welcome ★", comment: nil) }
+
+      /// en translation: Open Source
+      ///
+      /// Key: WhatsNew.Item3.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewItem3Title: RswiftResources.StringResource { .init(key: "WhatsNew.Item3.Title", tableName: "Localizable", source: source, developmentValue: "Open Source", comment: nil) }
+
+      /// en translation: See what the GitHub community is most excited about today
+      ///
+      /// Key: WhatsNew.Item4.Subtitle
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewItem4Subtitle: RswiftResources.StringResource { .init(key: "WhatsNew.Item4.Subtitle", tableName: "Localizable", source: source, developmentValue: "See what the GitHub community is most excited about today", comment: nil) }
+
+      /// en translation: Trending
+      ///
+      /// Key: WhatsNew.Item4.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewItem4Title: RswiftResources.StringResource { .init(key: "WhatsNew.Item4.Title", tableName: "Localizable", source: source, developmentValue: "Trending", comment: nil) }
+
+      /// en translation: Whats New
+      ///
+      /// Key: WhatsNew.Title
+      ///
+      /// Locales: en, zh-Hans, it
+      var whatsNewTitle: RswiftResources.StringResource { .init(key: "WhatsNew.Title", tableName: "Localizable", source: source, developmentValue: "Whats New", comment: nil) }
+    }
   }
 
   /// This `_R.image` struct is generated, and contains static references to 79 images.

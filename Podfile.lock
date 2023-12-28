@@ -1,7 +1,19 @@
 PODS:
   - Alamofire (5.8.1)
+  - BonMot (6.1.3)
+  - CocoaLumberjack/Core (3.8.2)
+  - CocoaLumberjack/Swift (3.8.2):
+    - CocoaLumberjack/Core
+  - DateToolsSwift (5.0.0)
   - Differentiator (5.0.0)
+  - DZNEmptyDataSet (1.8.1)
+  - FLEX (5.22.10)
   - Hero (1.6.2)
+  - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/Kingfisher (1.9.2):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - IQKeyboardManagerSwift (6.5.16)
   - KafkaRefresh (1.7.0):
     - KafkaRefresh/Category (= 1.7.0)
     - KafkaRefresh/Configuration (= 1.7.0)
@@ -38,11 +50,30 @@ PODS:
     - KafkaRefresh/Category
     - KafkaRefresh/Default
   - KeychainAccess (4.2.2)
+  - Kingfisher (7.10.1)
+  - Localize-Swift (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
+    - Localize-Swift/UIKit (= 3.2.0)
+  - Localize-Swift/LocalizeSwiftCore (3.2.0)
+  - Localize-Swift/UIKit (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya-ObjectMapper/Core (2.9):
+    - Moya (~> 15.0.0)
+    - ObjectMapper
+  - Moya-ObjectMapper/RxSwift (2.9):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (15.0.0):
     - Moya/Core
     - RxSwift (~> 6.0)
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
+  - ObjectMapper (4.2.0)
   - PromiseKit (8.1.1):
     - PromiseKit/CorePromise (= 8.1.1)
     - PromiseKit/Foundation (= 8.1.1)
@@ -61,13 +92,34 @@ PODS:
     - Differentiator (~> 5.0)
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxOptional (5.0.2):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - RxRelay (6.6.0):
     - RxSwift (= 6.6.0)
   - RxSwift (6.6.0)
+  - RxSwiftExt (6.2.1):
+    - RxSwiftExt/Core (= 6.2.1)
+    - RxSwiftExt/RxCocoa (= 6.2.1)
+  - RxSwiftExt/Core (6.2.1):
+    - RxSwift (~> 6.0)
+  - RxSwiftExt/RxCocoa (6.2.1):
+    - RxCocoa (~> 6.0)
+    - RxSwiftExt/Core
   - RxTheme (6.0.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - RxViewController (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - SnapKit (5.6.0)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+  - SwiftDate (7.0.0)
   - SwifterSwift (6.0.0):
     - SwifterSwift/AppKit (= 6.0.0)
     - SwifterSwift/Combine (= 6.0.0)
@@ -105,16 +157,33 @@ PODS:
   - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
+  - BonMot (~> 6.0)
+  - CocoaLumberjack/Swift (~> 3.0)
+  - DateToolsSwift (~> 5.0)
+  - DZNEmptyDataSet (~> 1.0)
+  - FLEX (~> 5.0)
   - Hero (~> 1.6.2)
+  - ImageSlideshow/Kingfisher (from `https://github.com/khoren93/ImageSlideshow.git`, branch `master`)
+  - IQKeyboardManagerSwift (~> 6.0)
   - KafkaRefresh (~> 1.0)
   - KeychainAccess (~> 4.2.2)
+  - Kingfisher (~> 7.0)
+  - Localize-Swift (~> 3.0)
+  - Moya-ObjectMapper/RxSwift (from `https://github.com/p-rob/Moya-ObjectMapper.git`, branch `master`)
   - Moya/RxSwift (~> 15.0)
+  - "NSObject+Rx (~> 5.0)"
   - PromiseKit (~> 8.1.1)
   - R.swift (~> 7.3.2)
   - RAMAnimatedTabBarController (~> 5.0)
   - RxDataSources (~> 5.0)
+  - RxGesture (~> 4.0)
+  - RxOptional (~> 5.0)
+  - RxSwiftExt (~> 6.0)
   - RxTheme (~> 6.0)
+  - RxViewController (~> 2.0)
   - SnapKit (~> 5.6.0)
+  - SVProgressHUD (~> 2.0)
+  - SwiftDate (~> 7.0)
   - SwifterSwift
   - Then (~> 3.0.0)
   - Toast-Swift (~> 5.0.1)
@@ -122,44 +191,94 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - BonMot
+    - CocoaLumberjack
+    - DateToolsSwift
     - Differentiator
+    - DZNEmptyDataSet
+    - FLEX
     - Hero
+    - IQKeyboardManagerSwift
     - KafkaRefresh
     - KeychainAccess
+    - Kingfisher
+    - Localize-Swift
     - Moya
+    - "NSObject+Rx"
+    - ObjectMapper
     - PromiseKit
     - R.swift
     - RAMAnimatedTabBarController
     - RxCocoa
     - RxDataSources
+    - RxGesture
+    - RxOptional
     - RxRelay
     - RxSwift
+    - RxSwiftExt
     - RxTheme
+    - RxViewController
     - SnapKit
+    - SVProgressHUD
+    - SwiftDate
     - SwifterSwift
     - Then
     - Toast-Swift
 
+EXTERNAL SOURCES:
+  ImageSlideshow:
+    :branch: master
+    :git: https://github.com/khoren93/ImageSlideshow.git
+  Moya-ObjectMapper:
+    :branch: master
+    :git: https://github.com/p-rob/Moya-ObjectMapper.git
+
+CHECKOUT OPTIONS:
+  ImageSlideshow:
+    :commit: 2535bc691a7c7c8eee12c44f97380de4b6c6a828
+    :git: https://github.com/khoren93/ImageSlideshow.git
+  Moya-ObjectMapper:
+    :commit: 4e4ba94bc8af9303471e637ba88a4768563642c9
+    :git: https://github.com/p-rob/Moya-ObjectMapper.git
+
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  BonMot: 1534503509ef48d3c4d0fbec2d0ea35f2887b4ea
+  CocoaLumberjack: f8d89a516e7710fdb2e9b8f1560b16ec6040eef0
+  DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FLEX: f21ee4f498eed3f8a1eded66b21939fd3b7a22ce
   Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
+  ImageSlideshow: 5b3517da354eed8c44145fabddc7377114a9423b
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
   KafkaRefresh: ee64c70eb7c9426a99e68ffdae59dba9bd0b5d51
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Kingfisher: bc5abe80a8e0144537ef1dd5a0b2621b04f7f439
+  Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Moya-ObjectMapper: fc1180eb07f527d70bba472f759cc7ccd3eadf24
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   PromiseKit: d1be44b474e5acfa16adf007a1f49f104e10fead
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
+  RxOptional: 3664964c96b69dd20c9cf78bdfe546615e26eca8
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  RxSwiftExt: 43aaacb6a4d3c69c55e9d1cf4f79920043d13583
   RxTheme: be60cb14e0544b3cbd574cc37fed35ba9d61aa1f
+  RxViewController: 56486fa0afd629a1d6b5ba077f3b8cd9dc31b5d2
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  SwiftDate: bbc26e26fc8c0c33fbee8c140c5e8a68293a148a
   SwifterSwift: 66843dc594f8fb890f5543c22545921d44acc004
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: cd7513dd55ee4413917a0ac48edaeaead18ea1d5
+PODFILE CHECKSUM: 4290ae4c9bce19d9be978231e10e1a5ede93ef3d
 
 COCOAPODS: 1.14.3
