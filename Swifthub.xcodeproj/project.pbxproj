@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		849313752B3D652C00DD0036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313742B3D652C00DD0036 /* AppDelegate.swift */; };
-		849313772B3D652C00DD0036 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313762B3D652C00DD0036 /* SceneDelegate.swift */; };
-		849313792B3D652C00DD0036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313782B3D652C00DD0036 /* ViewController.swift */; };
+		849313792B3D652C00DD0036 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313782B3D652C00DD0036 /* HomeTabBarController.swift */; };
 		8493137C2B3D652D00DD0036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8493137A2B3D652D00DD0036 /* Main.storyboard */; };
 		8493137E2B3D652D00DD0036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8493137D2B3D652D00DD0036 /* Assets.xcassets */; };
 		849313812B3D652D00DD0036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8493137F2B3D652D00DD0036 /* LaunchScreen.storyboard */; };
 		8493138C2B3D652D00DD0036 /* SwifthubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8493138B2B3D652D00DD0036 /* SwifthubTests.swift */; };
 		849313962B3D652D00DD0036 /* SwifthubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313952B3D652D00DD0036 /* SwifthubUITests.swift */; };
 		849313982B3D652D00DD0036 /* SwifthubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313972B3D652D00DD0036 /* SwifthubUITestsLaunchTests.swift */; };
+		849313B32B3D6FB700DD0036 /* InitialSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313B22B3D6FB700DD0036 /* InitialSplitViewController.swift */; };
+		849313B62B3D786A00DD0036 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849313B52B3D786A00DD0036 /* R.generated.swift */; };
 		F6825DE9570A2E7AB6688585 /* Pods_Swifthub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E328DA3ECBA5A5DE33D07CD /* Pods_Swifthub.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +41,7 @@
 		2D90E8A3AE63EF7DBFC61F3F /* Pods-Swifthub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifthub.debug.xcconfig"; path = "Target Support Files/Pods-Swifthub/Pods-Swifthub.debug.xcconfig"; sourceTree = "<group>"; };
 		849313712B3D652C00DD0036 /* Swifthub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifthub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849313742B3D652C00DD0036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		849313762B3D652C00DD0036 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		849313782B3D652C00DD0036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		849313782B3D652C00DD0036 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		8493137B2B3D652D00DD0036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8493137D2B3D652D00DD0036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849313802B3D652D00DD0036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		849313912B3D652D00DD0036 /* SwifthubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifthubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		849313952B3D652D00DD0036 /* SwifthubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifthubUITests.swift; sourceTree = "<group>"; };
 		849313972B3D652D00DD0036 /* SwifthubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifthubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		849313B22B3D6FB700DD0036 /* InitialSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSplitViewController.swift; sourceTree = "<group>"; };
+		849313B52B3D786A00DD0036 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		8E328DA3ECBA5A5DE33D07CD /* Pods_Swifthub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifthub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6881FB76F3EBE7B3FABAC13 /* Pods-Swifthub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifthub.release.xcconfig"; path = "Target Support Files/Pods-Swifthub/Pods-Swifthub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +89,6 @@
 				2D90E8A3AE63EF7DBFC61F3F /* Pods-Swifthub.debug.xcconfig */,
 				F6881FB76F3EBE7B3FABAC13 /* Pods-Swifthub.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,22 +117,16 @@
 		849313732B3D652C00DD0036 /* Swifthub */ = {
 			isa = PBXGroup;
 			children = (
+				849313AF2B3D6E1100DD0036 /* Modules */,
+				849313A42B3D655E00DD0036 /* Application */,
+				849313A52B3D656500DD0036 /* Common */,
+				849313A62B3D656900DD0036 /* Configs */,
+				849313A72B3D656F00DD0036 /* Extension */,
+				849313A82B3D657400DD0036 /* Managers */,
+				849313A92B3D657900DD0036 /* Models */,
+				849313AA2B3D657D00DD0036 /* Networking */,
 				849313AC2B3D659200DD0036 /* Resources */,
 				849313AB2B3D658400DD0036 /* ThirdParty */,
-				849313AA2B3D657D00DD0036 /* Networking */,
-				849313A92B3D657900DD0036 /* Models */,
-				849313A82B3D657400DD0036 /* Managers */,
-				849313A72B3D656F00DD0036 /* Extension */,
-				849313A62B3D656900DD0036 /* Configs */,
-				849313A52B3D656500DD0036 /* Common */,
-				849313A42B3D655E00DD0036 /* Application */,
-				849313742B3D652C00DD0036 /* AppDelegate.swift */,
-				849313762B3D652C00DD0036 /* SceneDelegate.swift */,
-				849313782B3D652C00DD0036 /* ViewController.swift */,
-				8493137A2B3D652D00DD0036 /* Main.storyboard */,
-				8493137D2B3D652D00DD0036 /* Assets.xcassets */,
-				8493137F2B3D652D00DD0036 /* LaunchScreen.storyboard */,
-				849313822B3D652D00DD0036 /* Info.plist */,
 			);
 			path = Swifthub;
 			sourceTree = "<group>";
@@ -156,6 +151,7 @@
 		849313A42B3D655E00DD0036 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				849313742B3D652C00DD0036 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -212,8 +208,30 @@
 		849313AC2B3D659200DD0036 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				849313B52B3D786A00DD0036 /* R.generated.swift */,
+				849313822B3D652D00DD0036 /* Info.plist */,
+				8493137D2B3D652D00DD0036 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		849313AF2B3D6E1100DD0036 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				849313B02B3D6E1600DD0036 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		849313B02B3D6E1600DD0036 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				849313782B3D652C00DD0036 /* HomeTabBarController.swift */,
+				849313B22B3D6FB700DD0036 /* InitialSplitViewController.swift */,
+				8493137A2B3D652D00DD0036 /* Main.storyboard */,
+				8493137F2B3D652D00DD0036 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		8A261A2A2AFF6D878FD1F69E /* Frameworks */ = {
@@ -236,6 +254,7 @@
 				8493136E2B3D652C00DD0036 /* Frameworks */,
 				8493136F2B3D652C00DD0036 /* Resources */,
 				967F17FA8471BD6B9A63CA7D /* [CP] Embed Pods Frameworks */,
+				849313B42B3D781E00DD0036 /* R.swfit */,
 			);
 			buildRules = (
 			);
@@ -353,6 +372,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		849313B42B3D781E00DD0036 /* R.swfit */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swfit;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/SwiftHub/Resources/R.generated.swift\"\n";
+		};
 		967F17FA8471BD6B9A63CA7D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,9 +436,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849313792B3D652C00DD0036 /* ViewController.swift in Sources */,
+				849313792B3D652C00DD0036 /* HomeTabBarController.swift in Sources */,
 				849313752B3D652C00DD0036 /* AppDelegate.swift in Sources */,
-				849313772B3D652C00DD0036 /* SceneDelegate.swift in Sources */,
+				849313B32B3D6FB700DD0036 /* InitialSplitViewController.swift in Sources */,
+				849313B62B3D786A00DD0036 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -561,7 +599,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -576,17 +614,18 @@
 			baseConfigurationReference = 2D90E8A3AE63EF7DBFC61F3F /* Pods-Swifthub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XJCYKA9AJ9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Swifthub/Info.plist;
+				INFOPLIST_FILE = Swifthub/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -605,17 +644,18 @@
 			baseConfigurationReference = F6881FB76F3EBE7B3FABAC13 /* Pods-Swifthub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XJCYKA9AJ9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Swifthub/Info.plist;
+				INFOPLIST_FILE = Swifthub/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

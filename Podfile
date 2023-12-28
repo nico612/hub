@@ -8,10 +8,35 @@ target 'Swifthub' do
   # Pods for Swifthub
 	
   #Tools
-  pod 'R.swift', '~> 7.3.2'  # https://github.com/mac-cain13/R.swift
+  
+  # 资源管理
+  pod 'R.swift', '~> 7.3.2' # https://github.com/mac-cain13/R.swift
   
   # Keychain
-  pod 'KeychainAccess', '~> 4.2.2'  # https://github.com/kishikawakatsumi/KeychainAccess
-
+  pod 'KeychainAccess', '~> 4.2.2' # https://github.com/kishikawakatsumi/KeychainAccess
+    
+    
+  # UI
+  
+  # 转场动画
+  pod 'Hero', '~> 1.6.2' # https://github.com/lkzhao/Hero
+  
+  # 内置多种动画、可自定义和灵活的iOS下拉刷新框架。
+  pod 'KafkaRefresh', '~> 1.0' # https://github.com/OpenFeyn/KafkaRefresh
+  
+  pod 'Toast-Swift', '~> 5.0.1' # https://github.com/scalessec/Toast-Swift
+  
+  # 动画 Tabar
+  pod 'RAMAnimatedTabBarController', '~> 5.0' # https://github.com/Ramotion/animated-tab-bar
+  
+  # 异步框架
+  pod 'PromiseKit', '~> 8.1.1' # https://github.com/mxcl/PromiseKit
+  
+  # 初始化语法糖
+  pod 'Then', '~> 3.0.0' # https://github.com/devxoul/Then
+  
+  
+  # Auto Layout
+  pod 'SnapKit', '~> 5.6.0' # https://github.com/SnapKit/SnapKit
 
 end
